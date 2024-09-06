@@ -5,6 +5,7 @@ try {
   const name = core.getInput('name');
   console.log(`Hello, ${name}. We appreciate your business!`);
   const timestamp = moment().format();
+  console.log(`Testing123`);
   console.log(`Greeting issued at: ${timestamp}`);
   core.setOutput("timestamp", timestamp);
 } catch (error) {

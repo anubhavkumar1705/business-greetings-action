@@ -1,0 +1,20 @@
+# Workflow name
+name: custom-action-demo
+
+# Triggers for the workflow
+on:
+  # Manual trigger using the workflow_dispatch event
+  workflow_dispatch:
+
+  # Automatic trigger on push events to the main branch
+  push:
+    branches:
+      - main
+
+# Jobs defined in the workflow
+jobs:
+  custom-action-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Custom action
+        uses: anubhavkumar1705/business-greetings-action@main

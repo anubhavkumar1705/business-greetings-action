@@ -23,6 +23,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
+
+      - name: Install dependency
+        run: npm i @actions/core
           
       - name: Run Custom action
         uses: anubhavkumar1705/business-greetings-action@main
